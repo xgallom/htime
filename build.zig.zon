@@ -1,0 +1,12 @@
+.{
+    .name = .htime,
+    .version = "1.0.0",
+    .fingerprint = 0x21b08cc809ca914d,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
