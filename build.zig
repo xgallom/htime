@@ -18,6 +18,7 @@ pub fn build(b: *std.Build) void {
             .imports = &.{
                 .{ .name = "htime", .module = mod },
             },
+            .link_libc = true,
         }),
     });
 
