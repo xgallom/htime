@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    tags:
+    thtime:
       - 'v*'
 
 jobs:
@@ -31,19 +31,19 @@ jobs:
         include:
           - target: x86_64-linux-musl
             os: ubuntu-latest
-            artifact: ags-linux-x86_64
+            artifact: htime-linux-x86_64
 
           - target: x86_64-windows
             os: windows-latest
-            artifact: ags-windows-x86_64.exe
+            artifact: htime-windows-x86_64.exe
 
           # - target: x86_64-macos
           #   os: macos-13
-          #   artifact: ags-macos-x86_64
+          #   artifact: htime-macos-x86_64
 
           - target: aarch64-macos
             os: macos-latest
-            artifact: ags-macos-aarch64
+            artifact: htime-macos-aarch64
 
     steps:
       - name: Checkout
