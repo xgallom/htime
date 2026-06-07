@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    thtime:
+    tags:
       - 'v*'
 
 jobs:
